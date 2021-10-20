@@ -1,0 +1,486 @@
+/******************************************************************
+
+Stylesheet: 600px以上のモニタで適用
+
+******************************************************************/
+
+.c-container {
+  padding: 0 10vw;
+}
+
+.c-title {
+  font-size: 1.5rem;
+}
+
+.num {
+  font-size: 2.2rem;
+}
+
+.view-more {
+  margin-top: 10vw;
+  text-align: right;
+
+  & span {
+    display: inline-block;
+    letter-spacing: 3px;
+    padding-bottom: 5px;
+    font-size: 1.6rem;
+    border-bottom: 1px solid $cWhite;
+  }
+}
+
+
+//.p-firstview 
+.p-firstview {
+  margin-top: 12vw;
+}
+
+//.p-features
+.p-features {
+  &__img {
+    height: 400px;
+    width: 80%;
+  }
+
+  &__desc {
+    width: 75%;
+    margin: -30vw 0 0 40vw;
+  }
+
+  &__text-label {
+    transform: none;
+
+    & span {
+      position: relative;
+      padding-left: 24vw;
+
+      &::before {
+        position: absolute;
+        top: 12px;
+        left: 0;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        width: 20vw;
+        background-color: $cGray;
+      }
+    }
+  }
+}
+
+.p-concept {
+  padding: 0 0 0 0;
+
+  &__img {
+    & .simpleParallax {
+      height: 320px;
+    }
+  }
+}
+
+//.p-eyecatch
+.p-eyecatch {
+  height: auto;
+  padding: 10vw 10vw;
+
+  &__image {
+    height: 300px;
+  }
+}
+
+//.p-price
+.p-price {
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__left {
+    width: 50%;
+  }
+
+  &__img {
+    height: 400px;
+  }
+
+  & .c-container {
+    width: 50%;
+    padding: 0 5vw;
+  }
+
+  .view-sp {
+    display: none;
+  }
+
+  .view-pc {
+    display: block;
+  }
+}
+
+//.p-voices
+.p-voices {
+  & ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 48%;
+  }
+
+  & .more-btn {
+    display: block;
+  }
+}
+
+//.p-staff
+.p-staff {
+  &__img {
+    width: 60%;
+  }
+
+  &__desc {
+    width: 50%;
+    margin: -30vw 0 0 40vw;
+  }
+
+  & .view-more {
+    margin-top: 0;
+  }
+}
+
+//.p-concept
+.p-concept {
+  & br {
+    display: none;
+  }
+
+  &__img {
+    margin: 0 -10vw;
+    height: 100%;
+  }
+
+  &__text {
+    margin: 0 auto;
+  }
+}
+
+//.p-access 
+.p-access {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 48%;
+  }
+
+  &__txt {
+    width: 48%;
+  }
+}
+
+//.p-footer
+.p-footer {
+  &__logo {
+    width: 30%;
+
+    & img {
+      width: 100px;
+      object-fit: contain;
+    }
+  }
+
+  &__nav {
+    width: 70%;
+
+    & ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    & li {
+      width: 50%;
+
+      .c-txt-sm {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__address {
+    width: 40%;
+    border-left: 1px solid rgb(224, 223, 223);
+  }
+}
+
+// * * * * ** * * 初めての方へ * * * * * * *
+.c-first,
+.c-price {
+  .c-features {
+    .c-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .contentTit {
+      width: 40%;
+    }
+
+    &__desc {
+      width: 58%;
+    }
+  }
+
+  .c-points {
+    & li {
+      display: flex;
+      justify-content: space-between;
+
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+    }
+
+
+    &__img {
+      width: 50%;
+    }
+
+    &__desc {
+      width: 50%;
+    }
+  }
+
+  .c-flow {
+    &-item {
+      .c-container {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    & .item-wrap {
+      width: 48%;
+    }
+
+    & .item-img {
+      width: 48%;
+    }
+  }
+}
+
+// * * * * * * * * * 料金体系 * * * * * * 
+.c-price {
+  &__img {
+    height: 200px;
+  }
+}
+
+// * * * * ** * * スタッフ紹介 * * * * * * *
+.c-staff-wrapper {
+  .c-features {
+    .c-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .contentTit {
+      width: 50%;
+    }
+
+    &__desc {
+      width: 50%;
+    }
+  }
+
+  .c-staff {
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__img {
+      width: 45%;
+    }
+
+    &__desc {
+      width: 50%;
+    }
+  }
+}
+
+// * * * * * * * * * よくあるご質問* * * * * * 
+.faq-wrapper {
+  .faq-contents {
+    & .c-container {
+      padding: 0 7vw;
+    }
+
+    & .faq {
+
+      &__title {
+        text-align: center;
+      }
+
+      & .c-txt-sm {
+        font-size: 16px;
+      }
+
+      & .c-txt-md {
+        font-size: 18px;
+      }
+
+      & dt {
+        &::before {
+          font-size: 28px;
+        }
+
+        & span {
+          &::after {
+            width: 3vw;
+          }
+        }
+      }
+
+      & dd {
+        &::before {
+          font-size: 30px;
+        }
+      }
+    }
+
+    & .nw-topview {
+      margin: 0 -3vw;
+
+      &__inner {
+        margin: 0 -4vw;
+      }
+    }
+  }
+}
+
+//* * * * * * * * * * 採用情報 * * * * * * * * 
+.c-recruit {
+  .c-container {
+    padding: 0 5vw;
+  }
+
+  & ul {
+    display: flex;
+    justify-content: space-between;
+
+    & li {
+      width: 30%;
+      line-height: 1;
+    }
+
+    .points-title {
+      margin-bottom: 25px;
+
+      & .c-txt-lr {
+        line-height: 1.5;
+        font-size: 18px;
+      }
+    }
+
+    .points-desc {
+      & .c-txt-sm {
+        font-size: 14px;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  .contents-recruit {
+    .c-table01 {
+      & tr {
+        & th {
+          vertical-align: top;
+          min-width: 200px;
+        }
+      }
+
+      & .u-view-sp {
+        display: none;
+      }
+    }
+
+  }
+}
+
+//* * * * * * recruit-page * * * * * * *
+.c-recruit {
+  padding: 0 0 5vw 0;
+
+  &__title {
+
+    & p {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__list {
+    font-size: 0.9rem;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+  }
+
+  &__item {
+    margin: 15px 0;
+  }
+
+  &__btn {
+    font-size: 1.2rem;
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  & .c-container {
+    padding: 5vw 10vw 0 10vw;
+  }
+
+  &__tit {
+    & span {
+      font-size: 1.2rem;
+    }
+
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__contents {
+    & p {
+      font-size: 1rem;
+    }
+  }
+
+  &__link {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+//* * * * * * news-page * * * * * * *
+.c-news {
+  padding: 10vw 0 0 0;
+
+  &__list {
+    & p {
+      font-size: 1rem;
+    }
+  }
+}
