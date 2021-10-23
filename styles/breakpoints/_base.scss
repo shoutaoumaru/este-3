@@ -80,7 +80,7 @@ img {
     height: 30vh;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       height: 100%;
       width: 100%;
@@ -109,13 +109,13 @@ img {
     }
   }
 
-  @media (max-width:599px) {
+  @media (max-width: 599px) {
     .view-pc {
       display: none;
     }
   }
 
-  @media (min-width:600px) {
+  @media (min-width: 600px) {
     .view-sp {
       display: none;
     }
@@ -139,7 +139,7 @@ img {
   position: absolute;
   top: 2px;
   right: 0;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -152,7 +152,7 @@ img {
   position: absolute;
   top: 2px;
   right: 0;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -166,7 +166,7 @@ img {
   &::before {
     content: "";
     display: block;
-    background-image: url(/images/common/ico-map-white.png);
+    background-image: url(../images/common/ico-map-white.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -187,7 +187,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(/images/common/icon-insta-gr.png);
+    background-image: url(../images/common/icon-insta-gr.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -225,7 +225,7 @@ img {
         padding-right: 30px;
 
         &::before {
-          content: '';
+          content: "";
           display: block;
           position: absolute;
           top: 0;
@@ -233,11 +233,11 @@ img {
           bottom: 0;
           margin: auto;
           width: 20px;
-          background-image: url(/images/common/arrow-wh.png);
+          background-image: url(../images/common/arrow-wh.png);
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
-          transition: .3s;
+          transition: 0.3s;
           z-index: 100;
         }
       }
@@ -268,16 +268,15 @@ img {
           transform: none;
 
           &:first-child {
-
             &::before {
-              background-image: url(/images/common/arrow.png);
+              background-image: url(../images/common/arrow.png);
             }
           }
         }
       }
     }
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       padding: 20px 40px;
       height: auto;
 
@@ -365,11 +364,10 @@ img {
       font-size: 0.9rem;
     }
 
-    @media (max-width:599px) {
+    @media (max-width: 599px) {
       & .c-txt-sm {
         font-size: 12px;
       }
-
     }
   }
 
@@ -378,7 +376,7 @@ img {
   }
 
   .more-btn {
-    display: block
+    display: block;
   }
 }
 
@@ -410,7 +408,7 @@ img {
     & dt {
       & span {
         display: block;
-        font-size: 12px
+        font-size: 12px;
       }
     }
 
@@ -425,11 +423,9 @@ img {
         margin-top: -5px;
       }
     }
-
-
   }
 
-  @media (max-width:599px) {
+  @media (max-width: 599px) {
     .view-pc {
       display: none;
     }
@@ -442,7 +438,7 @@ img {
   padding-bottom: 100px;
 
   &__image {
-    &>img {
+    & > img {
       object-fit: cover;
     }
   }
@@ -507,7 +503,6 @@ img {
 
     & .name {
       font-weight: bold;
-
     }
 
     & .tit {
@@ -519,7 +514,7 @@ img {
 
   .p-voice01 {
     &__img {
-      text-align: center
+      text-align: center;
     }
   }
 }
@@ -682,7 +677,6 @@ img {
       color: $cShadowBlue;
     }
   }
-
 }
 
 //.p-footer
@@ -723,7 +717,7 @@ img {
           content: "";
           height: 10px;
           width: 10px;
-          background-image: url(/images/common/arrow.png);
+          background-image: url(../images/common/arrow.png);
           background-repeat: no-repeat;
           background-size: contain;
         }
@@ -1184,7 +1178,7 @@ img {
           right: 0;
           width: 16px;
           height: 16px;
-          background-image: url(/images/common/arrow-down.png);
+          background-image: url(../images/common/arrow-down.png);
           background-position: top center;
           background-repeat: no-repeat;
           background-size: contain;
@@ -1293,7 +1287,7 @@ img {
         content: "";
         position: absolute;
         right: 0;
-        background-image: url(/images/common/arrow.png);
+        background-image: url(../images/common/arrow.png);
         background-position: right center;
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -1408,7 +1402,7 @@ img {
   .c-description {
     padding: 40px 0;
     background-color: $cHeader;
-    color: $cWhite;
+    color: $cBlack;
     @extend .mb-md;
 
     ul {
@@ -1417,7 +1411,7 @@ img {
 
     .c-txt-xs {
       font-size: 12px;
-      color: $cWhite;
+      color: $cBlack;
     }
   }
 
